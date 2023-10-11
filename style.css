@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'Salina';
+    src:url('Assets/Salina-Trial-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+    text-align: left;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.rabb{
+    color: #837c9a;
+}
+
+h1{
+    padding-top: 10px;   
+    float: left;
+    text-transform: uppercase;
+    font-family: 'Salina', Helvetica, sans-serif;
+    font-weight: 300;
+    color: #55665e;
+    font-size: 1.8rem;
+}
+
+h2{
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Salina', Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #837c9a;   
+}
+
+h3{
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Salina', Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #837c9a;
+    font-weight: 300;
+}
+
+h4
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px; 
+}
+
+.txtnopad
+{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.txtgoal
+{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.txtgoalone
+{
+    margin-top: 30px;
+    padding-bottom: 5px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;  
+    min-width: fit-content;
+}
+
+/* Middle container styles... */
+
+.middle-container{   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu{  
+    display:flex;
+    justify-content:center;
+    align-items:end;
+    border-bottom: 1px solid #403F44;
+    height: 130px;
+    width: 700px;
+}
+
+.logo{
+    margin-bottom: 40px;
+    position: absolute;
+    height: 80px;
+}
+
+.middlebox{
+    align-self: center;
+    height: 600px;
+    width: 600px;
+}
+
+.iframe{
+    width: 100%; /* Set the iframe width to 100% of the parent div */
+    height: 100%; /* Set the iframe height to 100% of the parent div */
+    border: none; /* Remove border from the iframe */
+}
+
+.resizable{
+    height: 560px;
+}
+
+.menu a{
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent element */
+}
+
+.menu a.active{
+    color: #c38f8f; /* Change this to the desired color */    
+}
+
+
+/* Left column styles... */
+
+.left-container{  
+    display:flex;
+    flex-direction: column;   
+}
+
+.left-column{
+    height: 561px;
+    width: 260px;  
+    border-right:1px solid #403F44;
+    border-bottom: 1px solid #403F44;
+}
+
+.nameheader{
+    border-right: 1px solid #403F44;
+    border-bottom: 1px solid #403F44;
+    height: 130px;
+    width: 260px;     
+}
+
+#rabb{
+    margin-top: 42px;  
+    margin-left: 60px;
+    max-height: 24%;
+    border-radius: 50%;   
+    border: 1px solid #403F44;
+}
+
+.contactheadline h2{
+    margin: 10px;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 30px;
+    color:#55665e;
+}
+
+.contactdetails > img{  
+    height: 20px;
+}
+
+.contactdetails{
+    padding-top: 10px;
+    margin-left: 20%;
+}
+
+.telefonnr{
+    float: right;
+    padding-top: 1px;
+    padding-right: 97px;
+}
+
+.email{
+    float: right;
+    padding-right: 7px;
+}
+
+.adress{
+
+    float: right;
+    padding-right: 48px;  
+}
+.text{
+    margin-right: 10px
+}
+
+/* Right column styles... */
+
+.rightcolumn{   
+    align-self:flex-start;
+    height: 693px;
+    width: 260px;  
+    border-left:1px solid #403F44;
+    border-bottom: 1px solid #403F44;
+}
+
+/* Skill list styles... */
+
+.skilllist{
+    margin: 20px;
+    margin-top: 82%;
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left edge of the container */ 
+}
+.skilllist li{
+    margin: 5px 0;
+}
+
+.skilllist h3{
+    padding-left: 20px;
+    text-align: left;
+}
+.goallist{
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Align items to the left edge of the container */ 
+    justify-content: left;
+}
+/* Social media styles... */
+
+.socialheadline h2{
+    margin: 3px;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 40px;
+    color:#55665e;
+}
+
+.social{
+    padding-top: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction:row;
+}
+
+.boxsocial img{
+    height: 55px; 
+}
+
+.boxsocial:hover{
+    opacity: 0.5;
+}
+
+/* Additional styles... */
+
+.text:hover{
+    opacity:0.5;
+}
+
+.quote > img{
+    padding-top: 20px;
+    float: right;
+    height: 40px;
+}
+
+.quote > .developer{
+    margin-top: 20px;    
+    border-radius: 20%;
+    float:left;
+    height: 200px;
+}
+
+/* Education, WorkExperience, Featured Projects styles... */
+
+.developer{
+    position: relative;
+    padding-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adjust this value as needed */      
+}
+
+.developer .txt{
+    margin: 0;
+    padding: 0;
+}
+
+.developer, .paragraf{
+    padding-top: 30px;
+    margin: 0;
+    padding: 15x;
+}
+
+.quote > .virtualreality{
+    margin-top: 80px;
+    height: 200px;
+    border-radius: 25%;
+}
+
+.padbox{
+    padding-top: 30px;
+}
+
+.profile, .education, .workexperience, .featuredprojects{
+    border-right: 1px solid #403F44;
+    padding-right: 10px ;
+}
+
+/* Videos styles... */
+
+.videos{
+    position: relative;
+    padding-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adjust this value as needed */
+}
+
+.videospadding{
+    padding-top: 30px;
+}
+
+/* Footer styles... */
+
+.footer{
+    text-align: center;
+    font-style: italic; 
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.5);
+ }
+
+

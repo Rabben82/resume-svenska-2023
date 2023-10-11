@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Resume</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+        <div class="container">               
+            <div class="left-container">
+                <div class="nameheader">
+                    <h1>christian <span class="rabb">rabb</span></h1>
+                    <h3>Utvecklare</h3>            
+                </div>
+                <div class="left-column">
+                    <img id="rabb" src="./Assets/rabb.png" alt="rabb">
+                    <div class = "contactheadline"><h2>Kontakt Info:</h2> </div>
+
+                    <div class="contactdetails">
+                        <img src="./Assets/phone.png" alt="image">
+                        <span class = "telefonnr">0768152294</span>
+                    </div>
+
+                    <div class="contactdetails">
+                        <img src="./Assets/mail.png" alt="image">
+                        <span class = "email">christian.rabb@gmail.com</span>
+                    </div>
+
+                    <div class="contactdetails">
+                        <img src="./Assets/Adress.png" alt="image">
+                        <span class = "adress">Stockholm, Sweden</span>
+                    </div>
+    
+                    <div class = "socialheadline"><h2>Get Social:</h2> </div>
+                
+                    <div class="social">
+                        <div class="boxsocial"><a href="https://www.linkedin.com/in/christian-rabb-80ba8a31/"><img src="./Assets/linkedin.png" alt="image"></a></div>
+                        <div class="boxsocial"><a href="https://www.facebook.com/christian.rabb"><img src="./Assets/facebook.png" alt="image"></a></div>
+                        <div class="boxsocial"><a href="https://www.instagram.com/rabben82/"><img src="./Assets/Instagram.png" alt="image"></a></div>
+                    </div>                     
+                </div>
+                <footer class="footer" >Copyright © 2023 Powered By Christian Rabb </footer>                                                
+            </div>
+
+            <div class="middle-container">
+                <div class="menu">         
+                    <img class = "logo" src="./Assets/logo.jpg" alt="image">
+                    <h3 class="profile text"><a href="./profile.html" target="content-frame" class="active">Profil</a></h3>
+                    <h3 class="education text"><a href="./education.html" target="content-frame">Utbildning</a></h3>
+                    <h3 class="workexperience text"><a href="./workexperience.html" target="content-frame">Erfarenhet</a></h3>
+                    <h3 class="featuredprojects text"><a href="./featuredprojetcs.html" target="content-frame">Projekt</a></h3>
+                    <h3 class="goals text"><a href="./goals.html" target="content-frame">Mål</a></h3>                         
+                </div>
+
+                <div class="middlebox"> 
+                    <div class="resizable">
+                        <iframe name="content-frame" class="iframe"  src="profile.html"></iframe> 
+                    </div>          
+                               
+                </div>
+            </div>
+                    
+            <div class="rightcolumn">    
+                <ul class="skilllist">
+                    <li><h3>C#</h3></li>
+                    <li><h3>.NET</h3></li>
+                    <li><h3>OOP</h3></li>
+                    <li><h3>Agila Metoder</h3></li>
+                    <li><h3>UNITY</h3></li>           
+                    <li><h3>Html</h3></li>
+                    <li><h3>Css</h3></li>
+                    <li><h3>FMOD</h3></li>
+                    <li><h3>Virtual Reality</h3></li> 
+                </ul>
+            </div>
+                     
+        </div>
+             
+    <script>
+        const navLinks = document.querySelectorAll('.menu a');
+
+        function removeAllActive() {
+            navLinks.forEach(l => l.classList.remove('active'));
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                removeAllActive();
+                link.classList.add('active');
+            });
+        });
+
+        // Highlight the "Profile" link as default
+        const profileLink = document.querySelector('.profile a');
+        profileLink.classList.add('active');
+    </script>
+    
+</body>
+
+</html>
