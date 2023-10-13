@@ -9,7 +9,7 @@ p{
     text-align: left;
     font-family: 'Lato', Helvetica, sans-serif;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1rem !important;
 }
 
 .rabb{
@@ -50,6 +50,7 @@ h4
     display: flex;
     justify-content: center;
     padding-top: 10px; 
+    font-size: 1.2rem;
 }
 
 .txtnopad
@@ -285,7 +286,6 @@ h4
 }
 
 .developer, .paragraf{
-    font-size: 1rem;
     padding-top: 30px;
     margin: 0;
 }
@@ -331,7 +331,9 @@ h4
  }
 
  @media (max-width: 768px) {
-    
+   p{
+    font-size: 1.3rem;
+   }
     h1 {
         font-size: 1.5rem; /* Adjust heading font size using rem */
     }
@@ -341,7 +343,13 @@ h4
     }
 
     h3 {
-        font-size: 1rem; /* Adjust heading font size using rem */
+        font-size: 1.4rem; /* Adjust heading font size using rem */
+    }
+    h4{
+        
+    }
+    h5{
+        font-size: 1rem;
     }
 
     /* Adjust image sizes for smaller screens */
@@ -349,7 +357,7 @@ h4
         max-width: 100%; /* Make images responsive */
         height: auto; /* Maintain aspect ratio */
     }
-
+   
     /* Adjust other element sizes as needed */
     .container {
         width: 100%;
@@ -371,9 +379,6 @@ h4
     {
         margin-bottom: 25px;
         order:3;
-    }
-    h3{
-        font-size: 0.9rem;
     }
     .skilllist{
         width: 10%;
