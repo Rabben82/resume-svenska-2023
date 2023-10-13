@@ -111,6 +111,7 @@ h4
 }
 
 .logo{
+    padding-top: 10px;
     margin-bottom: 40px;
     position: absolute;
     height: 80px;
@@ -351,13 +352,19 @@ h4
     h5{
         font-size: 1rem;
     }
+    .logo{
+        margin-top: 50px;
+        margin-right: 28px;
+        position: relative;
+        height: 149px;
+        width: 107px;
+    }
 
     /* Adjust image sizes for smaller screens */
-    img {
-        max-width: 100%; /* Make images responsive */
-        height: auto; /* Maintain aspect ratio */
-    }
-   
+
+   .iframe{
+    height: 2000px
+   }
     /* Adjust other element sizes as needed */
     .container {
         width: 100%;
@@ -367,16 +374,31 @@ h4
         align-items: center;
     }
     .middle-container{
+        padding-top: 10px;
         width: 100%;
         order: 1;
-        border-bottom: 1px solid #403F44;
+        /* border-bottom: 1px solid #403F44; */
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: none;
+        border-left: none;
+        padding-bottom: 30px;
+    }
+    .profile, .education, .workexperience, .featuredprojects{
+        border-right: none;
     }
     .left-container
     {
+        display: none;
        order:2;
     }
     .rightcontainer
     {
+        display: none;
         margin-bottom: 25px;
         order:3;
     }
