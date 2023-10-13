@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic" rel="stylesheet" type="text/css">
-
+<script src="./utility.js"></script>
 </head>
 <body>
         <div class="container">               
@@ -81,26 +81,6 @@
             </div>
                      
         </div>
-             
-    <script>
-        const navLinks = document.querySelectorAll('.menu a');
-
-        function removeAllActive() {
-            navLinks.forEach(l => l.classList.remove('active'));
-        }
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                removeAllActive();
-                link.classList.add('active');
-            });
-        });
-
-        // Highlight the "Profile" link as default
-        const profileLink = document.querySelector('.profile a');
-        profileLink.classList.add('active');
-    </script>
-    
 </body>
 
 </html>
